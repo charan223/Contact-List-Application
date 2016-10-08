@@ -472,7 +472,7 @@ public class sssfile extends JApplet {
 
 		this.getContentPane().setLayout(new CardLayout(0, 0));
 
-		this.setBounds(100, 100, 651, 543);
+		this.setBounds(100, 100, 900, 1000);
 		// setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		this.getContentPane().add(Data, BorderLayout.CENTER);
@@ -725,7 +725,7 @@ public class sssfile extends JApplet {
 				while (j > 0) {
 					if (fn.compareTo(one) == 0) {
 						setVisible(true);
-
+output=null;
 						Parts.setVisible(false);
 						Data.setVisible(false);
 						for (i = 0; i < relatives.size(); i++) {
@@ -734,13 +734,13 @@ public class sssfile extends JApplet {
 							email = relatives.get(i).getRemail();
 							date11 = relatives.get(i).getBdate();
 							date22 = relatives.get(i).getLdate();
-							output = name + "\n" + mobile + "\n" + email + "\n" + date11 + "\n" + date22 + "\n";
+							output = output+name + "\n" + mobile + "\n" + email + "\n" + date11 + "\n" + date22 + "\n";
 						}
 						JOptionPane.showMessageDialog(null, output);
 						j = 0;
 					} else if (fn.compareTo(two) == 0) {
 						setVisible(true);
-
+output=null;
 						Parts.setVisible(false);
 						Data.setVisible(false);
 						for (i = 0; i < personal.size(); i++) {
@@ -750,14 +750,14 @@ public class sssfile extends JApplet {
 							context = personal.get(i).getContext();
 							date22 = personal.get(i).getAdate();
 							specialevents = personal.get(i).getSpevents();
-							output = name + "\n" + mobile + "\n" + email + "\n" + context + "\n" + date22 + "\n"
+							output = output+name + "\n" + mobile + "\n" + email + "\n" + context + "\n" + date22 + "\n"
 									+ specialevents + "\n";
 						}
 						JOptionPane.showMessageDialog(null, output);
 						j = 0;
 					} else if (fn.compareTo(three) == 0) {
 						setVisible(true);
-
+output=null;
 						Parts.setVisible(false);
 						Data.setVisible(false);
 						for (i = 0; i < professional.size(); i++) {
@@ -766,13 +766,13 @@ public class sssfile extends JApplet {
 							email = professional.get(i).getPremail();
 							context = professional.get(i).getProinterests();
 
-							output = name + "\n" + mobile + "\n" + email + "\n" + context + "\n";
+							output =output+ name + "\n" + mobile + "\n" + email + "\n" + context + "\n";
 						}
 						JOptionPane.showMessageDialog(null, output);
 						j = 0;
 					} else if (fn.compareTo(four) == 0) {
 						setVisible(true);
-
+output=null;
 						Parts.setVisible(false);
 						Data.setVisible(false);
 						for (i = 0; i < casual.size(); i++) {
@@ -783,7 +783,7 @@ public class sssfile extends JApplet {
 							specialevents = casual.get(i).getUsefulinfo();
 							hjk = casual.get(i).getWhenwhere();
 
-							output = name + "\n" + mobile + "\n" + email + "\n" + context + "\n" + specialevents + "\n"
+							output =output+ name + "\n" + mobile + "\n" + email + "\n" + context + "\n" + specialevents + "\n"
 									+ hjk + "\n";
 						}
 						JOptionPane.showMessageDialog(null, output);
